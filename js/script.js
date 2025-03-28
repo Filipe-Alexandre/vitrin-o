@@ -52,3 +52,25 @@ lightBtn.addEventListener("click", ()=> {
     body.classList.add("lightMode");
 
 })
+
+// +100px para os links
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("a[href^='#']").forEach(anchor => {
+        anchor.addEventListener("click", function (event) {
+            event.preventDefault();
+            
+            const targetId = this.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+                const offset = 100;
+                const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+                
+                window.scrollTo({
+                    top: elementPosition - offset,
+                    behavior: "smooth"
+                });
+            }
+        });
+    });
+});
