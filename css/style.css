@@ -393,10 +393,6 @@ body {
       }
     }
 
-    .carousel-indicators {
-      filter: drop-shadow(0 0 10px var(--clr-base-2));
-    }
-
     .carousel-indicators [data-bs-target] {
 
       background-color: var(--clr-text);
@@ -405,6 +401,8 @@ body {
     .carousel-indicators [data-bs-target].active {
 
       background-color: var(--clr-base-2);
+      filter: drop-shadow(0 0 10px var(--clr-base-2));
+
     }
 
     .carousel-control-prev {

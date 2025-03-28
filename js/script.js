@@ -8,7 +8,6 @@ const missao = document.querySelector(".missaoDiv");
 const visao = document.querySelector(".visaoDiv");
 const valores = document.querySelector(".valoresDiv");
 
-
 btnSobre.addEventListener("click", ()=> {
     sobre.style.display = "flex";
     missao.style.display = "none";
@@ -47,7 +46,6 @@ darkBtn.addEventListener("click", ()=> {
     body.classList.add("darkMode");
 
 }) 
-
 
 lightBtn.addEventListener("click", ()=> {
     body.classList.remove("darkMode");
