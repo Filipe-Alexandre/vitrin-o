@@ -209,10 +209,10 @@ body {
 /* #region banner */
 
 #banner {
-  height: calc(100vh - 100px); 
+  height: calc(100vh - 100px);
   background: url(../img/banner/banner.jpeg) center center no-repeat;
   margin-top: 85px;
- 
+
 
   .bannerTxt {
     position: relative;
@@ -394,13 +394,17 @@ body {
     }
 
     .carousel-indicators {
+      filter: drop-shadow(0 0 10px var(--clr-base-2));
+    }
 
-      /* transform: translateY(20px); */
-      .active {
-        filter: drop-shadow(0 0 5px var(--clr-base-2));
-        background-color: var(--clr-base-2);
+    .carousel-indicators [data-bs-target] {
 
-      }
+      background-color: var(--clr-text);
+    }
+
+    .carousel-indicators [data-bs-target].active {
+
+      background-color: var(--clr-base-2);
     }
 
     .carousel-control-prev {
@@ -824,7 +828,7 @@ footer {
 @media (min-width: 1024px) {
   #banner {
     .desfoque {
-      font-size: calc(var(--txt-logo) * 1.5)!important;
+      font-size: calc(var(--txt-logo) * 1.5) !important;
 
     }
   }
