@@ -690,6 +690,7 @@ footer {
     a {
       text-decoration: none;
       color: var(--clr-base-2);
+      cursor: pointer;
     }
 
     div:nth-child(1) {
