@@ -45,9 +45,15 @@
   --clr-background: #eeeeee;
 }
 
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  cursor: pointer;
+}
+
 .lightMode .carousel-control-next-icon,
 .lightMode .carousel-control-prev-icon {
   filter: invert(100%);
+  cursor: pointer;
 }
 
 
@@ -414,11 +420,13 @@ body {
     .carousel-control-prev {
       left: 00%;
       transform: translateY(-15%);
+      cursor: default;
     }
 
     .carousel-control-next {
       right: 0%;
       transform: translateY(-15%);
+      cursor: default;
     }
 
     .carousel-caption {
