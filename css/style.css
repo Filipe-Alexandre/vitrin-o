@@ -31,7 +31,6 @@
   --clr-gradient: linear-gradient(to bottom, #0E2E34, #2A879A);
   --clr-gradient-invert: linear-gradient(to top, #0E2E34, transparent);
   --clr-background: linear-gradient(to bottom, #0E2E34, #2A879A);
-
 }
 
 .lightMode {
@@ -43,9 +42,17 @@
   --clr-black: #f2f2f2;
   --clr-transparent: transparent;
   --clr-gradient: linear-gradient(to bottom, #FD7E14, #f3aa6e);
-
   --clr-background: #eeeeee;
+}
 
+.lightMode .carousel-control-next-icon,
+.lightMode .carousel-control-prev-icon {
+  filter: invert(100%);
+}
+
+
+.darkBtn {
+  display: none;
 }
 
 /* #endregion variaveis */
@@ -95,7 +102,6 @@ body {
     img {
       border-radius: 50%;
     }
-
   }
 
   .btn {
@@ -658,6 +664,10 @@ body {
 
     }
 
+  }
+
+  .darkBtn {
+    display: none;
   }
 }
 

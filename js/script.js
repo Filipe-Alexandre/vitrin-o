@@ -44,13 +44,15 @@ const body = document.body
 darkBtn.addEventListener("click", ()=> {
     body.classList.remove("lightMode");
     body.classList.add("darkMode");
-
+    lightBtn.style.display="flex";
+    darkBtn.style.display="none";
 }) 
 
 lightBtn.addEventListener("click", ()=> {
     body.classList.remove("darkMode");
     body.classList.add("lightMode");
-
+    darkBtn.style.display="flex";
+    lightBtn.style.display="none";
 })
 
 // +100px para os links
