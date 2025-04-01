@@ -471,6 +471,8 @@ body {
           text-transform: uppercase;
           font-size: var(--txt-title);
           font-family: var(--font-accent);
+          filter: brightness(4);
+
         }
 
         ul {
