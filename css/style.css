@@ -175,6 +175,7 @@ body {
 
   .navbar-brand {
     font-size: var(--txt-icon);
+    cursor: pointer;
   }
 
   .nav-link {
@@ -605,7 +606,7 @@ body {
   cursor: pointer;
 
   &:hover {
-    background: var(--clr-button);
+    background: var(--clr-gradient);
     scale: 1.1;
     box-shadow: 4px 4px 8px var(--clr-fake-bg-menu);
   }
@@ -667,7 +668,7 @@ body {
       cursor: pointer;
 
       &:hover {
-        background: var(--clr-button);
+        background: var(--clr-gradient);
       }
 
     }
