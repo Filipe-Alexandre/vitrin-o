@@ -882,7 +882,7 @@ footer {
           li {
             border-bottom: 1px solid var(--clr-text);
             margin-bottom: 2vh;
-            font-size: 1.8vw;
+            font-size: var(--txt-paragraph);
 
             span {
               font-size: calc(var(--txt-logo) * .7);
